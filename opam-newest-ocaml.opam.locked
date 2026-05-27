@@ -1,0 +1,35 @@
+opam-version: "2.0"
+name: "opam-newest-ocaml"
+version: "0.1.0"
+synopsis: "Mend detection probe — newest OCaml 5.x compiler + newest stable deps"
+maintainer: "mend-detection-qa"
+authors: ["mend-detection-qa"]
+license: "MIT"
+homepage: "https://github.com/mend-detection-qa/opam-newest-ocaml"
+bug-reports: "https://github.com/mend-detection-qa/opam-newest-ocaml/issues"
+depends: [
+  "base-threads" {= "base"}
+  "base-unix" {= "base"}
+  "bigstringaf" {= "0.10.0"}
+  "cmdliner" {= "2.1.1"}
+  "cstruct" {= "6.2.0"}
+  "domain-local-await" {= "1.0.1"}
+  "dune" {= "3.23.1"}
+  "dune-configurator" {= "3.23.1"}
+  "eio" {= "1.3"}
+  "fmt" {= "0.11.0"}
+  "hmap" {= "0.8.1"}
+  "lwt-dllist" {= "1.1.0"}
+  "mtime" {= "2.1.0"}
+  "ocaml" {= "5.6.0"}
+  "ocamlbuild" {= "0.16.1"}
+  "ocamlfind" {= "1.9.8"}
+  "optint" {= "0.3.0"}
+  "psq" {= "0.2.1"}
+  "thread-table" {= "1.0.0"}
+  "topkg" {= "1.1.1"}
+]
+build: [
+  ["echo" "no build step"]
+]
+flags: locked
